@@ -15,7 +15,7 @@ So the approach is to login in to stackover flow using google then redirect to g
 So no Captcha....
 
 ## Login in GCR
-The automation will log in to the Google Class Room and will text a "Good moring" in Chat.
+The automation will log in to the Google Class Room.
 The automation will wait for the given length of the class then redirect to new class room.
 For time tigger I have use  TIME library of python.<br>
 
