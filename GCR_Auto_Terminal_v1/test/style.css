@@ -1,0 +1,22 @@
+body{
+	background: white;
+	margin: 10px;
+	padding:5px;
+}
+
+h1{
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 56px;
+}
+
+h6{font-size: 30px}
+
+p{
+	font-family: font-family: 'Rubik', sans-serif;
+	font-size: 24px;
+}
+
+#Warning{
+	text-decoration: underline;
+	color: red;
+}
