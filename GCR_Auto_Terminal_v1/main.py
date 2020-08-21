@@ -45,13 +45,13 @@ def main_func(class_name ,sh ,sm ,le,session):
 
 
 list_time = []
-#print("Good Morning")
-#print("Username and Password")
+print("Good Morning")
+print("Username and Password")
 username = input();
 passwordStr = input();
-#print("Enter number of class today")
+print("Enter number of class today")
 no_of_classes = int(input())
-#print("Enter Class Name  with start time  in format of 24:00 and length of class in minute")
+print("Enter Class Name  with start time  in format of 24:00 and length of class in minute")
 for i in range(0,no_of_classes):
 	list_time.append([])
 	name = input();
