@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 
 import time
 from datetime import datetime , timedelta
-from module import login,gcr_login,gcr_login2
+from module import login,gcr_login,gcr_login2,class_join_fun
 
 opt = webdriver.ChromeOptions()
 opt.add_argument("--disable-infobars")
@@ -31,14 +31,18 @@ def main_func(class_name ,sh ,sm ,le,session):
 	x=datetime.today();
 	y=x.replace(day=x.day,hour=sh,minute=sm,second=0,microsecond=0) + timedelta(days=1)
 	delta_t=y-x;
-	secs = delta_t.seconds + 1		
+	secs = delta_t.seconds + 1	
 	time.sleep(secs)
+	print("Enter Automated Message:")
+	message = input()	
+	print("Login in Class:",class_name,"\n")
 	if session == 0:
 		login(username,passwordStr,browser)
 		gcr_login(class_name,browser)
 	else :
 		gcr_login2(class_name,browser)
-	#return tt
+	class_join_fun(browser,message)	
+	time.sleep(le*60)
 	
 
 

@@ -48,7 +48,6 @@ def gcr_login2(class_name,browser):
 
 def gcr_login(class_name,browser):
 	
-	print(class_name)
 	
 	browser.get(('https://meet.google.com/'));
 
@@ -63,38 +62,31 @@ def gcr_login(class_name,browser):
 
 	browser.find_element_by_xpath('//*[@id="yDmH0d"]/div[3]/div/div[2]/div[3]/div/span/span').click()
 
-#def class_join_fun(browser):
-
-	#browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/span/span').click()
 
 
+def class_join_fun(browser,message):
 
-	# browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span').click()
+	join_button = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/span/span')))
 
-
-	# browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[1]/div[1]/div[2]/textarea').send_keys("Good Morning")
-
-
-	# browser.find_element_by_xpath('//*[@id="yDmH0d"]/div[3]/div/div[2]/div[2]/div[3]/div/span/span').click()
+	join_button.click();
 
 
 
+	browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span').click()
 
 
-	# browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span/span').click();
+	browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[1]/div[1]/div[2]/textarea').send_keys(message)
+
+
+	browser.find_element_by_xpath('//*[@id="yDmH0d"]/div[3]/div/div[2]/div[2]/div[3]/div/span/span').click(
+
+
+	browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[4]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span/span').click();
 
 
 
 
 
-#<input type="password" class="whsOnd zHQkBf"
-
-# username = "as8232@srmist.edu.in"
-# passwordStr = "This_is_my@Account12"
-# class_name = "dpj7nfbrzx"
-
-
-# gcr_automate(class_name,username,passwordStr)
 
 
 
