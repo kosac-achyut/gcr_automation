@@ -17,14 +17,14 @@ So no Captcha....
 ## Login in GCR
 The automation will log in to the Google Class Room and will text a "Good moring" in Chat.
 The automation will wait for the given length of the class then redirect to new class room.
-For time tigger I have use  TIME library of python.
+For time tigger I have use  TIME library of python.<br>
 
-Input flow
-username
-password 
-number of classes
-class code 
-class start time in 24:00 format
-length of class in minute
+Input flow\
+username\
+password\
+number of classes\
+class code\ 
+class start time in 24:00 format\
+length of class in minute\
 
 input shall be given via your os command line/terminal
