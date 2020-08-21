@@ -15,7 +15,7 @@ So the approach is to login in to stackover flow using google then redirect to g
 So no Captcha....
 
 ## Login in GCR
-The automation will log in to the Google Class Room.
+The automation will log in to the Google Class Room.And will wirte a automated message that script will ask before each class.
 The automation will wait for the given length of the class then redirect to new class room.
 For time tigger I have use  TIME library of python.<br>
 
@@ -28,3 +28,6 @@ class start time in 24:00 format<br>
 length of class in minute<br>
 
 input shall be given via your os command line/terminal
+
+Login in Google Class Room part is still buggy there is a good chance that first class will give the error and script will close.
+But if first class is passed by the script then there is no probelm you can give scipt more than 100 class it still work
