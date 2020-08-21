@@ -7,4 +7,4 @@ the need to learn a test scripting language.
 Project is based on fixied automation (No Intelligent Automation)
 The Whole process of automation is divide into three step:
 
-##Login in to Google account
+## Login in to Google account
