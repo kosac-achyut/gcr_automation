@@ -1,4 +1,4 @@
-# gcr_automation
+# Google Class Room Automated Login
 This project is based on Automating the login procedure in classes for student having multiple classes using Python3 and  Selenium.
 This project only work on Chrome.
 
